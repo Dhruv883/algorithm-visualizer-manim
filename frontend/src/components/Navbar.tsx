@@ -1,4 +1,4 @@
-import { Moon, Sun } from "lucide-react";
+import { Moon } from "lucide-react";
 
 const Navbar = () => {
   return (
