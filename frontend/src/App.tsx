@@ -64,7 +64,6 @@ const App = () => {
       setStage("complete");
     } catch (error) {
       console.error("Error generating video:", error);
-      // Handle error state here
       setStage("idle");
     } finally {
       setIsSubmitting(false);
