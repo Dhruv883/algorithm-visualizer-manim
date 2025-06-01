@@ -12,6 +12,7 @@ from pydantic import BaseModel
 from pydantic_settings import BaseSettings, SettingsConfigDict
 from google import genai
 import sys
+import uvicorn
 
 VIDEOS_DIR = "videos/"
 
@@ -223,3 +224,7 @@ async def get_video(video_id: str):
         media_type="video/mp4",
         filename=f"{video_id}.mp4"
     )
+
+if __name__ == "__main__":
+    port = int(os.environ.get("PORT", 8000))
+    uvicorn.run("main:app", host="0.0.0.0", port=port, reload=False)
