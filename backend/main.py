@@ -41,6 +41,7 @@ client = genai.Client(api_key=settings.GEMINI_API_KEY)
 
 origins = [
     settings.FRONTEND_URL,
+    "https://algorithm-visualizer-manim.vercel.app"
 ]
 
 app.add_middleware(
