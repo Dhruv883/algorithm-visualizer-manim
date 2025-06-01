@@ -1,0 +1,8 @@
+.env
+
+# Cache
+**/__pycache__
+
+# Virtual Env
+.venv
+/videos/
